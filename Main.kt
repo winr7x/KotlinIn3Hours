@@ -39,4 +39,27 @@ fun main() {
     println(greeting)
 
     println(name___)
+
+    var greeting__ :String? = null
+    if (greeting__ != null) {       // if else Kotlin control statement example
+        println(greeting)
+    } else {
+        println("Hi")
+    }
+
+    when (greeting__) {             // when Kotlin control statement example
+        null -> println("Hi")
+        else -> println(greeting__)
+    }
+
+                                    // assign from if else statement example
+    var greetingToPrint = if (greeting__ != null) greeting__ else "Hi";
+    println(greetingToPrint)
+
+                                    // assign from when statement example
+    greetingToPrint = when(greeting__) {
+        null -> "Hi"
+        else -> greeting__
+    }
+    println(greetingToPrint)
 }
