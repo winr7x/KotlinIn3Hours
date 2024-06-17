@@ -7,6 +7,6 @@ sudo snap install --classic kotlin
 
 
 ### Compile & Run project
-PROJECT_NAME=Main && \
-kotlinc $PROJECT_NAME.kt -include-runtime -d $PROJECT_NAME.jar && \
-java -jar $PROJECT_NAME.jar
+CHAPTER=01-variables && \
+kotlinc $CHAPTER.kt -include-runtime -d $CHAPTER.jar && \
+java -jar $CHAPTER.jar
