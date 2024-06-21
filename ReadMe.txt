@@ -6,7 +6,9 @@ https://youtu.be/F9UC9DY-vIU
 sudo snap install --classic kotlin
 
 
-### Compile & Run project
-CHAPTER=01-variables && \
-kotlinc $CHAPTER.kt -include-runtime -d $CHAPTER.jar && \
+### Compile & Run chapter
+CHAPTER=05-classes && \
+if [[ -d $CHAPTER ]]; then \
+kotlinc $CHAPTER/* -include-runtime -d $CHAPTER.jar; else \
+kotlinc $CHAPTER.kt -include-runtime -d $CHAPTER.jar; fi && \
 java -jar $CHAPTER.jar
